@@ -87,7 +87,7 @@ class MyTile extends StatelessWidget {
       borderRadius: BorderRadius.circular(3),
       child: Container(
         width: 195,
-        height: 400,
+        height: height,
         child: Stack(
           children: <Widget>[
             Container(
@@ -665,17 +665,22 @@ class MyFullTile extends StatelessWidget {
                           subtitle: Row(
                             children: <Widget>[
                               SizedBox(
-                                width: 80,
+                                width: 100,
                               ),
                               Column(children: <Widget>[
-                                Container(
-                                    margin: EdgeInsets.only(bottom: 10),
-                                    child: Text('$name  $time2 h',
-                                        style: TextStyle(
-                                          color: Colors.white10,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 14,
-                                        ))),
+                                Row(
+                                  children: <Widget>[
+                                    SizedBox(width: 50,),
+                                    Container(
+                                        margin: EdgeInsets.only(bottom: 10),
+                                        child: Text('$name  $time2 h',
+                                            style: TextStyle(
+                                              color: Colors.white10,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 14,
+                                            ))),
+                                  ],
+                                ),
                                 Text(
                                   '$comment',
                                   style: TextStyle(
@@ -748,27 +753,27 @@ class MyApp extends StatelessWidget {
                                   Column(
                                     children: <Widget>[
                                       MyTile('assets/images/a1.jpg',
-                                          'This is awesome', '5162', 140.0),
+                                          'This is awesome', '5162', 400.0),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       MyTile('assets/images/a2.jpg',
-                                          'This is awesome', '5162', 120.0),
+                                          'This is awesome', '5162', 200.0),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       MyTile('assets/images/a3.jpg',
-                                          'This is awesome', '5162', 130.0),
+                                          'This is awesome', '5162', 300.0),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       MyTile('assets/images/a4.jpg',
-                                          'This is awesome', '5162', 130.0),
+                                          'This is awesome', '5162', 300.0),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       MyTile('assets/images/a5.jpg',
-                                          'This is awesome', '5162', 140.0),
+                                          'This is awesome', '5162', 400.0),
                                     ],
                                   ),
                                   SizedBox(
@@ -777,27 +782,27 @@ class MyApp extends StatelessWidget {
                                   Column(
                                     children: <Widget>[
                                       MyTile('assets/images/b1.jpg',
-                                          'This is awesome', '5162', 130.0),
+                                          'This is awesome', '5162', 300.0),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       MyTile('assets/images/b2.jpg',
-                                          'This is awesome', '5162', 140.0),
+                                          'This is awesome', '5162', 400.0),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       MyTile('assets/images/b3.jpg',
-                                          'This is awesome', '5162', 130.0),
+                                          'This is awesome', '5162', 300.0),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       MyTile('assets/images/b4.jpg',
-                                          'This is awesome', '5162', 140.0),
+                                          'This is awesome', '5162', 400.0),
                                       SizedBox(
                                         height: 10,
                                       ),
                                       MyTile('assets/images/b5.jpg',
-                                          'This is awesome', '5162', 120.0),
+                                          'This is awesome', '5162', 200.0),
                                     ],
                                   ),
                                 ],
@@ -869,52 +874,52 @@ class MyApp extends StatelessWidget {
                                   width: 8,
                                 ),
                                 MySmallTile('assets/images/tile10.jpg',
-                                    'This is awesome', 3423),
+                                    'Snake warp up...', 3423),
                                 SizedBox(
                                   width: 8,
                                 ),
                                 MySmallTile('assets/images/tile2.jpg',
-                                    'This is awesome', 3423),
+                                    'Tricking a monk...', 5242),
                                 SizedBox(
                                   width: 8,
                                 ),
                                 MySmallTile('assets/images/tile3.jpg',
-                                    'This is awesome', 3423),
+                                    'One image with...', 6483),
                                 SizedBox(
                                   width: 8,
                                 ),
                                 MySmallTile('assets/images/tile4.jpg',
-                                    'This is awesome', 3423),
+                                    'Sunset off the c...', 2847),
                                 SizedBox(
                                   width: 8,
                                 ),
                                 MySmallTile('assets/images/tile5.jpg',
-                                    'This is awesome', 3423),
+                                    'r/NaturelsFucki...', 9576),
                                 SizedBox(
                                   width: 8,
                                 ),
                                 MySmallTile('assets/images/tile6.jpg',
-                                    'This is awesome', 3423),
+                                    'Krakatau at night', 1983),
                                 SizedBox(
                                   width: 8,
                                 ),
                                 MySmallTile('assets/images/tile7.jpg',
-                                    'This is awesome', 3423),
+                                    'Perk of the Job', 233),
                                 SizedBox(
                                   width: 8,
                                 ),
                                 MySmallTile('assets/images/tile8.jpg',
-                                    'This is awesome', 3423),
+                                    'Pen Ink on a lea...', 366),
                                 SizedBox(
                                   width: 8,
                                 ),
                                 MySmallTile('assets/images/tile9.jpg',
-                                    'This is awesome', 3423),
+                                    'Evolutionary left...', 2883),
                                 SizedBox(
                                   width: 8,
                                 ),
                                 MySmallTile('assets/images/tile10.jpg',
-                                    'This is awesome', 3423),
+                                    'Ducks on the ce...', 9826),
                                 SizedBox(
                                   width: 8,
                                 ),
@@ -945,18 +950,18 @@ class MyApp extends StatelessWidget {
                         MyFullTile(
                             'assets/images/dp2.jpg',
                             'assets/images/5.jpg',
-                            'HAHAHA',
-                            'raniGifHero',
+                            'Astounding',
+                            'bannedforajoke',
                             'funny',
-                            'doggy',
-                            34,
+                            'current',
+                            59,
+                            447,
                             20,
-                            6,
-                            10,
-                            4,
-                            'Jdonkay',
+                            55,
+                            39,
+                            'beastmaster69',
                             1,
-                            'Tat fisrt one is so relatable',
+                            'Donglover is a national treasure',
                             'assets/images/dp5.jpg'),
                         SizedBox(
                           height: 10,
@@ -964,18 +969,18 @@ class MyApp extends StatelessWidget {
                         MyFullTile(
                             'assets/images/dp3.jpg',
                             'assets/images/6.jpg',
-                            'HAHAHA',
-                            'raniGifHero',
+                            'Pic of ex-GF',
+                            'Baldeagle23',
                             'funny',
-                            'doggy',
-                            34,
-                            20,
-                            6,
-                            10,
-                            4,
-                            'Jdonkay',
+                            'cat',
+                            44,
+                            1752,
+                            49,
+                            548,
+                            112,
+                            'Waitingforcoffee',
                             1,
-                            'That first one is so relatable',
+                            'them duke boys, at it again',
                             'assets/images/dp6.jpg'),
                         SizedBox(
                           height: 10,
@@ -985,11 +990,16 @@ class MyApp extends StatelessWidget {
               ]),
               bottomNavigationBar: BottomNavigationBar(
                 type: BottomNavigationBarType.shifting,
-                fixedColor: Colors.white,
+                fixedColor: Colors.greenAccent,
                 backgroundColor: Colors.grey,
                 items: [
                   BottomNavigationBarItem(
-                      icon: Icon(Icons.home, color: Colors.grey),
+                      icon: Column(
+                        children: <Widget>[
+                          SizedBox(height: 10,),
+                          Icon(Icons.home,color: Colors.grey,)
+                        ],
+                      ),
                       title: Text('')),
                   BottomNavigationBarItem(
                       icon: Icon(Icons.search, color: Colors.grey),
